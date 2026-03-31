@@ -1,0 +1,176 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=""description content="">
+    <title>CurtisL</title>
+    <style>
+        body{
+            background-color:#000000;
+            color:#ffffff;
+            font-family:'Garamond', serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 10px;
+        }
+        .sidenav{
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            line-height: 1.5;
+        }
+        .sidenav a{
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #f1f1f1;
+            display: block;
+            transition: 0.3s;
+            text-align: left;
+        }
+        .sidenav a:hover{
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .sidenav .close{
+            position: absolute;
+            top: 0;
+            left: 1px;
+            font-size: 36px;
+            margin-right: 30px;
+        }
+        @media screen and (max-height: 450px) {
+            .sidenav{padding-top: 15px;}
+            .sidenav a{font-size: 18px;}
+        }
+        .fade-in{
+            opacity: 1;
+            animation-name: fadeIn;
+            animation-iteration-count: 1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 1s;
+        }
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1{
+            text-align: left;
+            font-size: 3em;
+            /*text-indent: 150px;*/
+            text-decoration: underline;
+        }
+        h2 {
+            text-align: center;
+            font-size: 2.5 em;
+            font-style: italic;
+        }
+        h3 {
+            text-align: left;
+            font-size: 1.5em;
+            font-style: bold;
+        }
+        h6 {
+            position: fixed;
+            font-size: 3;
+            color: #e3e1da;
+            bottom: 50px;
+            margin: auto;
+            background-color:#000000;
+            border: 1px solid #f1f1f1;
+            border-radius: 5px;
+        }
+        p {
+            text-align: center;
+            position: relative;
+            font-size: 1em;
+            line-height: 1.5;
+            text-wrap: pretty;
+        }
+        .img_medium {
+            display: block;
+            max-width: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {margin: 0;}
+        a {
+            color: #f1f1f1;
+        }
+        a:hover {
+            color: #ffffff;
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .text-box {
+            display: block;
+            padding: 10px;
+            margin-top: 20px;
+            border-top: 2px solid #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class = "container">
+        <section class="fade-in">
+            <div id="navBar" class="sidenav">
+            <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;
+            </a>
+            <a href="information">Info</a>
+            <a href="projects">Projects</a>
+            <a href="contact">Contact</a>
+        </div>
+        <span style="font-size:25px;cursor:pointer;float:right"onclick="openNav()">&#78828;</span>
+        <script>
+        function openNav() {
+            document.getElementById("navBar").style.width = "250px";
+        }
+        function closeNav() {
+            document.getElementById("navBar").style.width = "0";
+        }
+        </script>
+        <h1>Curtis's Bureau</h1>
+        <h2>"A Renaissance Man In The Making."</h2>
+        <img src="https://i.postimg.cc/xdzd36kR/Untitled34-20250707211746.png" class="img_medium">
+        <div class="text-box">
+            <p>Hello.</p>
+            <br>
+            <p>I am M; some may know me as Curtis. I am a college student pursuing for a Bachelor's Degree in Computer Science specialising in
+                data analysis. Despite being a computer science student, I have taken a keen interest in quantum mechanics; 
+                I can only learn this subject myself since there are no universities near where I live that offer this course. 
+                That being said, I am teaching myself calculus, linear algebra, relevant theories and equations [e.g. general/special relativity theory, 
+                Lagrangian mechanics, reference frames, angular momentum, etc.] if I am not studying DSA (Data Structure and Algorithms).
+            </p>
+            <br>
+            <p>I have also taken a great interest in cybersecurity, mostly because I want to learn how different types of malware work, 
+            and the various methods of exploiting the vulnerabilities of a system. When I was a child, I used to watch malware analysis videos
+            by <a href="https://www.youtube.com/channel/UCviSYAcwdnDX1UoRzAHYgNg">Siam Alam</a>, and later <a href=https://www.youtube.com/user/danooct1>danooct1</a>
+            Years later, just a few months ago, I came upon a video by John Hammond that explains <a href="https://www.youtube.com/watch?v=25NvCdFSkA4&pp=0gcJCfwAo7VqN5tD">how a MP3 file can conceal a malware</a>.
+            I have only been doing CTF (Capture The Flag) and exercises on HackThisSite so far; I plan to dig deeper into networking and cryptography.
+        </p>
+        </div>
+        </section>
+    </div>
+    <div class="container">
+        <h6>©2025, CurtisL. All rights reserved.</h6>
+    </div>
+</body>
+</html>
