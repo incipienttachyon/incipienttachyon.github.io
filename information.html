@@ -149,6 +149,10 @@
         function closeNav() {
             document.getElementById("navBar").style.width = "0";
         }
+        document.addEventListener('contextMenu', function(event) {
+            event.preventDefault()
+            return false
+        })
         </script>
         <img src="https://i.postimg.cc/KvJ1Qghp/IMG-20241120-145801.jpg" class="img_medium">
         <h3>Interests</h3>
